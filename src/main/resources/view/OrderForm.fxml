@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootNode" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.BlueDewMangementSystem.controller.orderFormController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="1000.0">
+         <image>
+            <Image url="@../asssert.icon/360_F_86561234_8HJdzg2iBlPap18K38mbyetKfdw1oNrm.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="330.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MANAGE ORDERS" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="30.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" fontSmoothingType="LCD" layoutX="279.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Order Id">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="277.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="359.0" layoutY="387.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text layoutX="628.0" layoutY="326.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <TextField fx:id="txtOrderID" layoutX="279.0" layoutY="144.0" />
+      <TextField fx:id="txtPRICE" layoutX="277.0" layoutY="200.0" />
+      <TextField fx:id="txtDATE" layoutX="279.0" layoutY="256.0" />
+      <Button fx:id="btnCLEAR" layoutX="885.0" layoutY="181.0" mnemonicParsing="false" onAction="#btnCLEAROnAction" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #39A8CB;" text="CLEAR" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnSAVE" layoutX="885.0" layoutY="228.0" mnemonicParsing="false" onAction="#btnSAVEOnAction" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #39A8CB;" text="SAVE" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnDELETE" layoutX="885.0" layoutY="274.0" mnemonicParsing="false" onAction="#btnDELETEOnAction" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #39A8CB;" text="DELETE" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnUPDATE" layoutX="885.0" layoutY="321.0" mnemonicParsing="false" onAction="#btnUPDATEOnAction" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #39A8CB;" text="UPDATE" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnSEARCH" layoutX="885.0" layoutY="370.0" mnemonicParsing="false" onAction="#btnSEARCHOnAction" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #39A8CB;" text="SEARCH" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Button>
+      <Line endX="160.0" layoutX="431.0" layoutY="74.0" startX="-100.0" stroke="#39a8cb" strokeWidth="4.0" />
+      <Text fill="WHITE" layoutX="280.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="508.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer id">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tblOrder" layoutX="161.0" layoutY="370.0" onMouseClicked="#tblOrderOnAction" prefHeight="200.0" prefWidth="679.0">
+         <columns>
+            <TableColumn fx:id="colID" prefWidth="123.0" text="Id" />
+            <TableColumn fx:id="colPRICE" prefWidth="117.0" text="Price" />
+            <TableColumn fx:id="colDATE" prefWidth="166.0" text="Date" />
+            <TableColumn fx:id="colCustomerID" prefWidth="141.0" text="Customer id" />
+            <TableColumn fx:id="colQty" prefWidth="131.0" text="Qty" />
+         </columns>
+      </TableView>
+      <ComboBox fx:id="combCustomerID" layoutX="508.0" layoutY="144.0" prefWidth="150.0" />
+      <TextField fx:id="txtQty" layoutX="277.0" layoutY="316.0" />
+      <Text fill="WHITE" layoutX="279.0" layoutY="312.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Qty">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnDetails" layoutX="885.0" layoutY="417.0" mnemonicParsing="false" onAction="#btnDetailsOnAction" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #39A8CB;" text="Details" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

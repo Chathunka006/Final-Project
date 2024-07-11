@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootNode" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.BlueDewMangementSystem.controller.PlaceOrderFormController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="1000.0">
+         <image>
+            <Image url="@../asssert.icon/360_F_86561234_8HJdzg2iBlPap18K38mbyetKfdw1oNrm.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="329.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Place Order" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="30.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" fontSmoothingType="LCD" layoutX="44.0" layoutY="440.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Id">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="40.0" layoutY="499.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Customer Name">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="349.0" layoutY="377.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text layoutX="618.0" layoutY="316.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <TextField fx:id="txtCustomerId" layoutX="44.0" layoutY="444.0" />
+      <Button fx:id="btnAdd" layoutX="882.0" layoutY="100.0" mnemonicParsing="false" onAction="#btnAddOnAction" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #39A8CB;" text="Add" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnAddToCart" layoutX="252.0" layoutY="483.0" mnemonicParsing="false" onAction="#btnAddToCartOnAction" prefHeight="59.0" prefWidth="133.0" style="-fx-background-color: #39A8CB;" text="Add To Cart" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnBack" layoutX="589.0" layoutY="493.0" mnemonicParsing="false" onAction="#btnBackOnAction" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #39A8CB;" text="Bill" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnPlaceOrder" layoutX="411.0" layoutY="493.0" mnemonicParsing="false" onAction="#btnPlaceOrderOnAction" prefHeight="40.0" prefWidth="133.0" style="-fx-background-color: #39A8CB;" text="Place Order" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Button>
+      <Line endX="95.0" layoutX="430.0" layoutY="65.0" startX="-100.0" stroke="#39a8cb" strokeWidth="4.0" />
+      <Text fill="WHITE" layoutX="46.0" layoutY="386.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact Number">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="711.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add New Customer" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtOrderId" layoutX="41.0" layoutY="105.0" />
+      <Text fill="WHITE" layoutX="41.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Order Id">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="41.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtPrice" layoutX="44.0" layoutY="235.0" />
+      <Text fill="WHITE" layoutX="44.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="combFishId" layoutX="262.0" layoutY="110.0" onAction="#combFishIdOnAction" prefHeight="31.0" prefWidth="187.0" />
+      <Text fill="WHITE" layoutX="263.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fish Id">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtFishName" layoutX="262.0" layoutY="160.0" />
+      <Text fill="WHITE" layoutX="265.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fish Name">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtQty" layoutX="44.0" layoutY="295.0" />
+      <Text fill="WHITE" layoutX="46.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Qty">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tblFish" layoutX="249.0" layoutY="215.0" onMouseClicked="#tblCUSTOMEROnAction" prefHeight="255.0" prefWidth="739.0">
+         <columns>
+            <TableColumn fx:id="colFishId" prefWidth="133.0" text="Fish Id" />
+            <TableColumn fx:id="colFishNAME" prefWidth="165.0" text="Fish Name" />
+            <TableColumn fx:id="colFishQty" text="Qty" />
+            <TableColumn fx:id="colFishPrice" prefWidth="115.0" text="Price" />
+            <TableColumn fx:id="colFishTotal" prefWidth="134.0" text="Total" />
+            <TableColumn fx:id="colFishAction" prefWidth="111.0" text="Action" />
+         </columns>
+      </TableView>
+      <TextField fx:id="txtCustomeName" layoutX="41.0" layoutY="503.0" />
+      <ComboBox fx:id="combContact" layoutX="41.0" layoutY="392.0" onAction="#combContactOnAction" prefHeight="31.0" prefWidth="187.0" />
+      <DatePicker fx:id="txtDate" layoutX="41.0" layoutY="160.0" prefHeight="31.0" prefWidth="187.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.2.final using JasperReports Library version 6.21.2-8434a0bd7c3bbc37cbf916f2968d35e4b165821a  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="FishReport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="fc893bf2-6c45-4c0f-88b4-fa18c79f7c97">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (3)"/>
+	<queryString language="SQL">
+		<![CDATA[select * from  blue_dew_aquarium.fish]]>
+	</queryString>
+	<field name="fish_id" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="fish_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="fish_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="fish"/>
+	</field>
+	<field name="fishname" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="fishname"/>
+		<property name="com.jaspersoft.studio.field.label" value="fishname"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="fish"/>
+	</field>
+	<field name="fishCount" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="fishCount"/>
+		<property name="com.jaspersoft.studio.field.label" value="fishCount"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="fish"/>
+	</field>
+	<field name="price" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="price"/>
+		<property name="com.jaspersoft.studio.field.label" value="price"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="fish"/>
+	</field>
+	<field name="tank_id" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="tank_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="tank_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="fish"/>
+	</field>
+	<field name="qyt" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="qyt"/>
+		<property name="com.jaspersoft.studio.field.label" value="qyt"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="fish"/>
+	</field>
+	<group name="fish_id">
+		<groupExpression><![CDATA[$F{fish_id}]]></groupExpression>
+	</group>
+	<group name="fishname">
+		<groupExpression><![CDATA[$F{fishname}]]></groupExpression>
+	</group>
+	<group name="fishCount">
+		<groupExpression><![CDATA[$F{fishCount}]]></groupExpression>
+	</group>
+	<group name="price">
+		<groupExpression><![CDATA[$F{price}]]></groupExpression>
+	</group>
+	<group name="tank_id">
+		<groupExpression><![CDATA[$F{tank_id}]]></groupExpression>
+	</group>
+	<group name="qyt">
+		<groupExpression><![CDATA[$F{qyt}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="87" splitType="Stretch">
+			<staticText>
+				<reportElement x="170" y="30" width="140" height="57" uuid="4c86e102-a42d-4d09-b19f-f9ba9a6e325c"/>
+				<textElement>
+					<font fontName="SansSerif" size="18"/>
+				</textElement>
+				<text><![CDATA[BLUE DEW AQUARIUM]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="80" height="30" uuid="9bdcbedd-778c-4b62-99c3-ee16dc814ec1">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="13b4a611-c964-4934-9c3e-f03af26c6dad"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[fish_id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="0" width="80" height="30" uuid="410c1822-d34b-4969-bf2d-1838389510e3">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3148b9d0-9f78-4eed-8956-87fba9aa29a3"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[fishname]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="160" y="0" width="50" height="30" uuid="5cc8a9a9-877a-4779-a900-c478d460cc7f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="edefc661-6dd9-4eb9-b6b7-1f1e08570782"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[fishCount]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="210" y="0" width="80" height="30" uuid="1422f0ad-9c7f-4362-b989-80e01012f093">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="115be64b-3254-4563-a114-855a03d6a557"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[price]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="290" y="0" width="70" height="30" uuid="abd03ae7-af67-418d-8964-50696c162ec6">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a3a30a14-3728-476f-bc29-b84073596ddf"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[tank_id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="360" y="0" width="40" height="30" uuid="7d9ea080-b338-4707-99e2-4ef958952156">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b9e483be-a88f-4b38-9ea2-a3bf733d3536"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[qyt]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="33" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="80" height="30" uuid="e24aaad4-dcdb-4647-b66b-e01261244154">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="13b4a611-c964-4934-9c3e-f03af26c6dad"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{fish_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="0" width="80" height="30" uuid="aec21cef-5112-4741-8f9e-5c4eece60da5">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3148b9d0-9f78-4eed-8956-87fba9aa29a3"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{fishname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="160" y="0" width="60" height="30" uuid="726b7c76-a35f-4cce-a462-09af4f5ac27d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="edefc661-6dd9-4eb9-b6b7-1f1e08570782"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{fishCount}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="220" y="0" width="70" height="30" uuid="5cef0e44-a266-4170-8fa5-dc36b704958b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="115be64b-3254-4563-a114-855a03d6a557"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{price}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="290" y="0" width="70" height="30" uuid="7569056a-570f-45fd-ae5d-c34d8f235009">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a3a30a14-3728-476f-bc29-b84073596ddf"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tank_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="360" y="0" width="40" height="30" uuid="d3b9dbe7-1ff5-42ea-907c-67cc97c2eb4d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b9e483be-a88f-4b38-9ea2-a3bf733d3536"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{qyt}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch">
+			<staticText>
+				<reportElement x="160" y="0" width="100" height="30" uuid="5adc3fe8-1f51-4d94-8bfa-c20f4df5ef86"/>
+				<text><![CDATA[THANK YOU..!]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

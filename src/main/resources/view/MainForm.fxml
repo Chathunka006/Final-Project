@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anpMAIN2" prefHeight="600.0" prefWidth="1276.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.BlueDewMangementSystem.controller.mainFormController">
+   <children>
+      <AnchorPane fx:id="anpMAIN3" prefHeight="600.0" prefWidth="300.0" style="-fx-background-color: #09181F;">
+         <children>
+            <Button fx:id="btnEMPLOYEE" layoutX="47.0" layoutY="219.0" mnemonicParsing="false" onAction="#btnEMPLOYEEOnAction" prefHeight="40.0" prefWidth="206.0" style="-fx-background-color: #5ECCEC;" text="EMPLOYEE">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnCUSTOMER" layoutX="47.0" layoutY="273.0" mnemonicParsing="false" onAction="#btnCUSTOMEROnAction" prefHeight="40.0" prefWidth="206.0" style="-fx-background-color: #5ECCEC;" text="CUSTOMER">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnMEAL" layoutX="47.0" layoutY="328.0" mnemonicParsing="false" onAction="#btnMEALOnAction" prefHeight="40.0" prefWidth="206.0" style="-fx-background-color: #5ECCEC;" text="FISH">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnROOM" layoutX="47.0" layoutY="382.0" mnemonicParsing="false" onAction="#btnOrderOnAction" prefHeight="40.0" prefWidth="206.0" style="-fx-background-color: #5ECCEC;" text="ORDERS">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnSUPPLIER" layoutX="47.0" layoutY="435.0" mnemonicParsing="false" onAction="#btnSUPPLIEROnAction" prefHeight="40.0" prefWidth="206.0" style="-fx-background-color: #5ECCEC;" text="SUPPLIER">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnPAYMENT" layoutX="47.0" layoutY="488.0" mnemonicParsing="false" onAction="#btnTankOnAction" prefHeight="40.0" prefWidth="206.0" style="-fx-background-color: #5ECCEC;" text="TANKS">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnLOGOUT" layoutX="47.0" layoutY="545.0" mnemonicParsing="false" onAction="#btnLOGOUTOnAction" prefHeight="40.0" prefWidth="206.0" style="-fx-background-color: #5ECCEC;" text="LOG OUT" textFill="RED">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnDASHBOARD" layoutX="47.0" layoutY="112.0" mnemonicParsing="false" onAction="#btnDASHBOARDOnAction" prefHeight="44.0" prefWidth="206.0" style="-fx-background-color: #5ECCEC;" text="DASHBOARD">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Button>
+            <Text fill="#f8f8f8" layoutX="121.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BLUE DEW AQURIAUM" wrappingWidth="158.16259765625">
+               <font>
+                  <Font name="Britannic Bold" size="33.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="93.0" fitWidth="102.0" layoutX="14.0" layoutY="12.0">
+               <image>
+                  <Image url="@../asssert.icon/da5016e353b4b5296c2267aaf07a4c55.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnPlaceOrder" layoutX="47.0" layoutY="166.0" mnemonicParsing="false" onAction="#btnPlaceOrderOnAction" prefHeight="40.0" prefWidth="206.0" style="-fx-background-color: #5ECCEC;" text="Place Order">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="anpMAIN1" layoutX="278.0" prefHeight="600.0" prefWidth="1000.0" />
+   </children>
+</AnchorPane>

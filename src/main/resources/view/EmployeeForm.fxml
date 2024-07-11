@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootNode" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.BlueDewMangementSystem.controller.employeeFormController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="1000.0" layoutX="-1.0">
+         <image>
+            <Image url="@../asssert.icon/360_F_86561234_8HJdzg2iBlPap18K38mbyetKfdw1oNrm.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="320.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MANAGE EMPLOYEE " textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="30.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" fontSmoothingType="LCD" layoutX="253.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee id">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Text>
+      <Text fill="WHITE" layoutX="253.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee Name">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></Text>
+      <Text layoutX="339.0" layoutY="367.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text layoutX="608.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <TextField fx:id="txtEMPLOYEEID" layoutX="253.0" layoutY="100.0" />
+      <TextField fx:id="txtEMPLOYEENAME" layoutX="253.0" layoutY="166.0" />
+      <TextField fx:id="txtDATE" layoutX="253.0" layoutY="294.0" />
+      <TextField fx:id="txtAge" layoutX="253.0" layoutY="231.0" />
+      <TextField fx:id="txtCONTACT" layoutX="531.0" layoutY="99.0" />
+      <TextField fx:id="txtSALARY" layoutX="531.0" layoutY="163.0" />
+      <TextField fx:id="txtATTENDENCE" layoutX="531.0" layoutY="229.0" />
+      <Button fx:id="btnCLEAR" layoutX="886.0" layoutY="130.0" mnemonicParsing="false" onAction="#btnCLEAROnAction" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #39A8CB;" text="CLEAR" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></Button>
+      <Button fx:id="btnSAVE" layoutX="886.0" layoutY="175.0" mnemonicParsing="false" onAction="#btnSAVEOnAction" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #39A8CB;" text="SAVE" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnDELETE" layoutX="886.0" layoutY="220.0" mnemonicParsing="false" onAction="#btnDELETEOnAction" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #39A8CB;" text="DELETE" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnUPDATE" layoutX="886.0" layoutY="265.0" mnemonicParsing="false" onAction="#btnUPDATEOnAction" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #39A8CB;" text="UPDATE" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnDetails" layoutX="886.0" layoutY="309.0" mnemonicParsing="false" onAction="#btnDetailOnAction" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #39A8CB;" text="Details" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Button>
+      <Line endX="237.0" layoutX="421.0" layoutY="58.0" startX="-100.0" stroke="#39a8cb" strokeWidth="4.0" />
+      <Text fill="WHITE" layoutX="257.0" layoutY="287.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="253.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Age">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="534.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="534.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Salary ">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="535.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Attendence">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tblEMPLOYEE" layoutX="5.0" layoutY="390.0" onMouseClicked="#tblEmployeeOnAction" prefHeight="200.0" prefWidth="989.0">
+        <columns>
+          <TableColumn fx:id="colID" prefWidth="94.0" text="Id" />
+          <TableColumn fx:id="colNAME" prefWidth="138.0" text="Name" />
+            <TableColumn fx:id="colDATE" prefWidth="122.0" text="Date" />
+            <TableColumn fx:id="colCONTACT" prefWidth="123.0" text="Contact" />
+            <TableColumn fx:id="colSALARY" prefWidth="156.0" text="Salary" />
+            <TableColumn fx:id="colATTENDENCE" prefWidth="75.0" text="Attendence" />
+            <TableColumn fx:id="colAge" prefWidth="140.0" text="Age" />
+            <TableColumn fx:id="colDescription" prefWidth="140.0" text="Description" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtDescription" layoutX="531.0" layoutY="294.0" />
+      <Text fill="WHITE" layoutX="534.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
